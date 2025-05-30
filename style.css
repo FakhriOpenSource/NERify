@@ -1,0 +1,171 @@
+/* Latar belakang halaman */
+body {
+    background-color: #0d1117;
+    color: #d1d5db;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Judul */
+h1, h2, h3 {
+    color: #60a5fa;
+    font-weight: 700;
+}
+
+/* Area teks input */
+textarea, .stTextArea > div {
+    background-color: #1f2937 !important;
+    border-radius: 10px !important;
+    padding: 10px !important;
+    border: 1px solid #374151 !important;
+    color: #d1d5db !important;
+}
+
+/* Selectbox dan slider */
+.stSelectbox, .stSlider {
+    background-color: #1f2937 !important;
+    color: #d1d5db !important;
+    border-radius: 8px !important;
+}
+
+/* Uploader */
+.stFileUploader {
+    background-color: #1e293b;
+    border: 2px dashed #3b82f6;
+    border-radius: 10px;
+    color: #93c5fd;
+    font-weight: 600;
+    padding: 10px;
+}
+
+/* DataFrame/Table */
+.stDataFrame {
+    background-color: #111827;
+    color: #d1d5db;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
+
+/* Tombol utama */
+button[kind="primary"] {
+    background-color: #2563eb;
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 10px 20px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 8px rgba(96, 165, 250, 0.4); /* Cahaya biru */
+}
+
+button[kind="primary"]:hover {
+    background-color: #1d4ed8;
+    transform: scale(1.03);
+    box-shadow: 0 0 12px rgba(96, 165, 250, 0.6);
+}
+
+/* Loading spinner text */
+.css-1fcdlhz {
+    color: #60a5fa !important;
+    font-weight: bold;
+}
+
+/* Highlight teks penting */
+.highlight {
+    background-color: rgba(255, 255, 255, 0.1); /* Cahaya lembut */
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Section spacing */
+.stMarkdown h2 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+/* Scrollbar custom (optional) */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #111827;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #2563eb;
+    border-radius: 10px;
+}
+
+/* Highlight warna untuk entitas NER */
+mark[title^="PER"] {
+    background-color: #ef4444; /* Merah */
+    color: white;
+    padding: 3px 6px;
+    border-radius: 4px;
+}
+
+mark[title^="ORG"] {
+    background-color: #10b981; /* Hijau emerald */
+    color: white;
+    padding: 3px 6px;
+    border-radius: 4px;
+}
+
+mark[title^="LOC"], mark[title^="GPE"] {
+    background-color: #facc15; /* Kuning */
+    color: black;
+    padding: 3px 6px;
+    border-radius: 4px;
+}
+
+mark[title^="DAT"] {
+    background-color: #3b82f6; /* Biru */
+    color: white;
+    padding: 3px 6px;
+    border-radius: 4px;
+}
+
+mark[title^="FAC"] {
+    background-color: #a78bfa; /* Ungu */
+    color: white;
+    padding: 3px 6px;
+    border-radius: 4px;
+}
+
+mark[title^="MON"] {
+    background-color: #f59e0b; /* Oranye */
+    color: black;
+    padding: 3px 6px;
+    border-radius: 4px;
+}
+
+
+/* Responsif untuk layar kecil (HP/Tablet) */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    h1, h2, h3 {
+        font-size: 1.3rem;
+    }
+
+    button[kind="primary"] {
+        width: 100%;
+        padding: 12px;
+        font-size: 1rem;
+    }
+
+    .stFileUploader, .stSelectbox, .stSlider, textarea {
+        font-size: 0.95rem;
+    }
+
+    .stDataFrame {
+        font-size: 12px;
+        overflow-x: auto;
+    }
+
+    mark {
+        font-size: 0.9rem;
+    }
+}
